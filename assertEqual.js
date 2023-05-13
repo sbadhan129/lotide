@@ -1,5 +1,5 @@
-var assertEqual = function(actual, expected) {
-  if (1 === expected ){
+const assertEqual = function(actual, expected) {
+  if (actual === expected ){
     console.log(`✅✅✅Assertion passed: ${actual} === ${expected}`);
   }
   else{
@@ -8,7 +8,8 @@ var assertEqual = function(actual, expected) {
   
 };
 
+
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-console.assert ( "Lighthouse Labs"==="Lighthouse Labs"); 
+
+
+module.exports = assertEqual;
