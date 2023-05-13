@@ -1,7 +1,7 @@
 const assertEqual = require('../assertEqual');
 const head = require('../head');
 const tail = require('../tail');
-const eqArrays = require('../tail');
+const eqArrays = require('../eqArrays');
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
