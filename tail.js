@@ -1,8 +1,10 @@
-function tail(array) {
-  return array.slice(0);
-}
 
-
-
+function tail(arra) {
+  if (arra.length <= 1) {
+    return [];
+  }
+  return arra.slice(1);
+};
 
 module.exports = tail;
+
