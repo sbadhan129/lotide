@@ -7,18 +7,6 @@ var assertArraysEqual = function(arr1 , arr2) {
   }
   
 };
-var eqArrays=function(array1, array2)
-{
-if (array1.length !== array2.length){
-  return false;
-}
-for (let i =0; i < array1.length; i++){
- if( array1.length[i]!== array1.length[i]){
-  return false;
- }
-}
-return true;
-};
 
 function flatten(arrays) {
   const flattened = [];
@@ -36,9 +24,5 @@ function flatten(arrays) {
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
 
-// TEST CODE
-assertArraysEqual("Lighthouse Labs", "Bootcamp");
-assertArraysEqual(1, 1);
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-console.assert ( "Lighthouse Labs"==="Lighthouse Labs"); 
 
+module.exports = flatten;

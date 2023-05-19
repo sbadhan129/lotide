@@ -9,3 +9,5 @@ assertArraysEqual("Lighthouse Labs", "Bootcamp");
 assertArraysEqual(1, 1);
 assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 console.assert("Lighthouse Labs" === "Lighthouse Labs");
+
+

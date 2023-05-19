@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 var eqArrays=function(array1, array2)
 {
 if (array1.length !== array2.length){
@@ -17,16 +19,6 @@ return true;
 };
 
 
-
-var assertEqual = function(actual, expected) {
-  if (actual === expected ){
-    console.log(`✅✅✅Assertion passed: ${actual} === ${expected}`);
-  }
-  else{
-    console.log(`🛑🛑🛑Assertion failed: ${actual} !== ${expected}`);
-  }
-  
-};
 
 const eqObjects = function(object1, object2) {
   const obj1Keys = Object.keys(object1);
@@ -84,11 +76,5 @@ const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"]
 eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject); // => false
 assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject), false);
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-console.assert ( "Lighthouse Labs"==="Lighthouse Labs"); 
 
-const obj1 = { a: '1', b: 2 };
-const obj2 = { b: 2, a: '1' };
-assertObjectsEqual(obj1, obj2);
+module.exports = assertEqual;
