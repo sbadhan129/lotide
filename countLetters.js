@@ -1,7 +1,5 @@
-
 function countLetters(words) {
-  const counts = {};
-  
+  const counts = {};  
   for (const char of words) {
     if (counts[char]) {
       counts[char]++;
@@ -9,9 +7,7 @@ function countLetters(words) {
       counts[char] = 1;
     }
   }
-  
   return counts;
 }
-
 module.exports = countLetters;
 

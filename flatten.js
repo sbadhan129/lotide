@@ -1,13 +1,3 @@
-var assertArraysEqual = function(arr1 , arr2) {
-  if (arr1 === arr2 ){
-    console.log(`✅✅✅Assertion passed: ${arr1} === ${arr2}`);
-  }
-  else{
-    console.log(`🛑🛑🛑Assertion failed: ${arr1} !== ${arr2}`);
-  }
-  
-};
-
 function flatten(arrays) {
   const flattened = [];
   for (let i = 0; i < arrays.length; i++) {
@@ -21,8 +11,5 @@ function flatten(arrays) {
   }
   return flattened;
 }
-
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
-
-
 module.exports = flatten;
